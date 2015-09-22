@@ -7,7 +7,6 @@ var server = prerender({
 	messageTimeout: process.env.PHANTOM_CLUSTER_MESSAGE_TIMEOUT
     });
 
-
 server.use(prerender.removeScriptTags());
 
 if (process.env.BASIC_AUTH_USERNAME) {
